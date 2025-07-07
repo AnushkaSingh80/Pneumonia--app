@@ -6,7 +6,7 @@ from PIL import Image, ImageOps
 # Load the model
 @st.cache_resource()
 def load_model():
-    model = tf.keras.models.load_model("my_model2.hdf5")
+    model = tf.keras.models.load_model("my_model2.hdf5",compile=False)
     return model
 
 model_d = load_model()
